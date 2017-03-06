@@ -1,0 +1,19 @@
+{
+  "name": "node-tests",
+  "version": "0.0.1",
+  "description": "Obligatory node.js tests",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "matson48",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.17.0",
+    "express": "^4.14.1",
+    "mustache": "^2.3.0",
+    "mysql": "^2.13.0",
+    "node-cleanup": "^2.1.2",
+    "redis": "^2.6.5"
+  }
+}

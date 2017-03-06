@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+
+<html lang="en">
+   <head>
+     <title>node.js Tests - Database </title>
+   </head>
+
+   <body>
+     <a href="/">Back to homepage</a>
+
+     <h1>node.js Database Tests</h1>
+     <p>Let's see what on earth any of this does.</p>
+
+     <h2>Post Maker</h2>
+     <form action="/make-post" method="post">
+       <p>Your name: <input type="text" name="poster"></p>
+       <p>Your post: <textarea name="text"></textarea></p>
+       <p><input type="submit"></p>
+     </form>
+
+     <h2>Post List</h2>
+
+     {{#results}}
+     <h3>Post {{id}} posted by {{poster}}</h3>
+     <p>{{text}}</p>
+     {{/results}}
+
+     {{^results}}
+     <p>There are no posts.</p>
+     {{/results}}
+   </body>
+</html>
